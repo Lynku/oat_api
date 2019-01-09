@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteRule ^v1/([^/]*)([^/]*)$ /index.php?method=$1&$2 [L,QSA]
+RewriteRule ^v1/user/([^/]*)$ /index.php?method=user&id=$1 [L,QSA]
