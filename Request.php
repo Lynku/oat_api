@@ -5,6 +5,7 @@ class Request{
     private $dataHandler = null;
 
     function __construct(iHandler $dataHandler){
+	   header("Access-Control-Allow-Origin: *");
         header('Content-type: application/json');
         $this->dataHandler = $dataHandler;
      }
